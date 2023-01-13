@@ -44,13 +44,32 @@
   <!-- SCRIPT -->
 
   <!-- ParticlesJS -->
-  <script src="path/to/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+  <script src="https://npmcdn.com/particlesjs@2.2.3/dist/particles.min.js"></script>
   <script>
+    
     window.onload = function() {
-      Particles.init({
-        selector: '.background'
-    });
-  };
+        Particles.init({
+          selector: '.background',
+          color: 'gray',
+          maxParticles: 130,
+          connectParticles: false,
+          
+          responsive: [
+            {
+              breakpoint: 768,
+              options: {
+                maxParticles: 80
+              }
+            }, {
+              breakpoint: 375,
+              options: {
+                maxParticles: 50
+              }
+            }
+          ]
+        });
+      };
   </script>
 
 </html>
