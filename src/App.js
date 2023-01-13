@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
+import './style/style.css'
 
 function App() {
   return (
     <>
-      <h1>TEST1</h1>
-      <h1>TEST1</h1>
-      <h1>TEST1</h1>
-      <h1>TEST1</h1>
-      <h1>TEST1</h1>
+    <div>
+      <h1>hello</h1>
+      <canvas class="background"></canvas>
+    </div>
     </>
   );
 }
