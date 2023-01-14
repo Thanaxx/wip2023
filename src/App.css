@@ -1,14 +1,15 @@
 /* PARTICLES JS */
 html, body {
-  margin: 0;
+  /* margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: #001E3C; */
+  box-sizing: border-box;
 }
-  
+/*   
 .background { 
   position:absolute;
   display:block;
   top: 0;
   left: 0;
   z-index: 0;
-}
+} */

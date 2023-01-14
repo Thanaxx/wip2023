@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import './style/style.css'
+import ParticlesBackground from './components/particlesbg';
 
 function App() {
   return (
     <>
-      <div>
-        <canvas class="background"></canvas>
-      </div>
+      <ParticlesBackground/>
     </>
   );
 }
