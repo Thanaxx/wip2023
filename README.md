@@ -75,3 +75,8 @@ https://marcbruederlin.github.io/particles.js/
 ### IF ERROR IN NPM RUN
 run npm install
 
+### PARTICLES
+run npm install react-tsparticles@1.42.2
+customize using the link https://particles.js.org/
+copy json file and copy to new .js file
+import Particles and run start
