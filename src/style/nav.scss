@@ -1,0 +1,26 @@
+@import '../style/variables/variable.scss';
+
+.nav-wrap{
+    width: 100%;
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+}
+
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu button{
+    @include btnStyle(0px, 10px 15px);
+}
+
+.nav-links{
+    background-color: red;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}

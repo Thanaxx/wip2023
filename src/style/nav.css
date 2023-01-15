@@ -1,0 +1,35 @@
+.nav-wrap {
+  width: 100%;
+  padding: 20px 30px;
+  position: fixed;
+  top: 0;
+}
+
+.nav-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-menu button {
+  padding: 10px 15px;
+  margin-top: 0px;
+  font-size: 14px;
+  background-color: #132F4C;
+  border: 1px solid #144271;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.nav-links {
+  background-color: red;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}/*# sourceMappingURL=nav.css.map */

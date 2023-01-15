@@ -1,0 +1,30 @@
+//COLORS
+$mainColor: #001E3C;
+$subMainColor: #071B2F;
+$mainTextColor: #66B2FF;
+$subTextColor: #FFFFFF;
+$lightBg: #132F4C;
+$lightBgStroke: #144271;
+
+//FONTS
+$ibm: 'IBM Plex Sans', sans-serif;
+$jakarta: 'Plus Jakarta Sans', sans-serif;
+
+//FONT WEIGHT
+$jakarta800: 800;
+
+//FONT SIZES
+$buttonFont: 14px;
+
+
+//button default style
+@mixin btnStyle ($marginTop, $padding) {
+    padding: $padding;
+    margin-top: $marginTop;
+    font-size: $buttonFont;
+    background-color: $lightBg;
+    border: 1px solid $lightBgStroke;
+    border-radius: 5px;
+    color: $subTextColor;
+    cursor: pointer;
+}

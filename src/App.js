@@ -1,11 +1,17 @@
 import React from 'react';
-import './App.css';
-import ParticlesBackground from './components/particlesbg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Nav from './components/nav';
+import Main from './pages/main';
 
 function App() {
   return (
     <>
-      <ParticlesBackground/>
+      <BrowserRouter>
+        <Nav/>
+        <Routes>
+          <Route path='/' element={<Main/>} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
