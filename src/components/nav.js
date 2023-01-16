@@ -4,7 +4,7 @@ import '../style/nav.css';
 import {RxHamburgerMenu} from 'react-icons/rx';
 import {MdOutlineClose} from 'react-icons/md';
 
-function nav() {
+function Nav() {
 
     const [sidebar, setSidebar] = useState(false);
 
@@ -19,40 +19,38 @@ function nav() {
                 <div className='nav-logo'>
                     <img src="/images/code.png" alt="personal logo" />
                 </div>
-                <div>
-                    <div className="nav-menu">
-                        <button onClick={showSideBar}><RxHamburgerMenu/></button>
-                    </div>
+                <div className="nav-menu-btn">
+                    <button onClick={showSideBar}><RxHamburgerMenu/></button>
                 </div>
             </div>
+        </div>
 
-            <div className={sidebar ? 'nav-links active' : 'nav-links'}>
-                <ul className="nav-menu-items" >
-                    <li className="navbar-toggle">
-                        <button><MdOutlineClose/></button>
-                    </li>
+        <div className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+             <ul className="nav-menu-items" onClick={showSideBar} >
+                <li className="navbar-toggle">
+                    <button><MdOutlineClose/></button>
+                </li>
 
-                    <li>
-                        <Link>About</Link>
-                    </li>
+                <li className='nav-text'>
+                    <Link>About</Link>
+                </li>
 
-                    <li>
-                        <Link>Stacks</Link>
-                    </li>
+                <li className='nav-text'>
+                    <Link>Stacks</Link>
+                </li>
 
-                    <li>
-                        <Link>Projects</Link>
-                    </li>
+                <li className='nav-text'>
+                    <Link>Projects</Link>
+                </li>
 
-                    <li>
-                        <Link>Contact</Link>
-                    </li>
+                <li className='nav-text'>
+                    <Link>Contact</Link>
+                </li>
                     
-                </ul>
-            </div>
+            </ul>
         </div>
     </>
   )
 }
 
-export default nav
+export default Nav
