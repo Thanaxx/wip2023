@@ -2,5 +2,69 @@
 
 .about-wrap{
     background-color: $subMainColor;
-    padding: 100px 0;
+    padding: 80px 120px;
+    color: $subTextColor;
+
+    .about-grid{
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .about-info{
+        // background-color: saddlebrown;
+
+        p{
+            color: $mainTextColor;
+            font-family: $ibm;
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        h1{
+            color: $subTextColor;
+            font-size: 45px;
+            font-family: $jakarta;
+
+            span{
+                color: $mainTextColor;
+            }
+        }
+
+        button{
+            @include btnStyle(10px, 10px 20px);
+        }
+    }
+
+    .about-desc{
+        // background-color: rgb(119, 12, 0);
+        font-family: $ibm;
+
+        .about-intro{
+            p{
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+        }
+
+        .about-personal-info{
+            // background-color: seagreen;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            padding: 10px 0;
+        }
+
+        .info-col p:nth-child(odd){
+            font-weight: 800;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        .icon{
+            color: $mainTextColor;
+        }
+    }
 }

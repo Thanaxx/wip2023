@@ -1,5 +1,61 @@
 @import '../style/variables/variable.scss';
 
 .skills-wrap{
-    height: 100vh;
+    // background-color: sandybrown;
+    margin: 70px 100px;
+
+    .skills-title{
+        // background-color: darkcyan;
+        margin-bottom: 20px;
+        width: 40%;
+
+        .label{
+            color: $mainTextColor;
+            font-family: $ibm;
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        h1{
+            font-size: 45px;
+            color: $mainTextColor;
+            font-family: $jakarta;
+        }
+
+        span{
+            color: $subTextColor;
+        }
+
+        p{
+            font-family: $ibm;
+            font-size: 18px;
+            color: $lightText();
+        }
+    }
+
+    .skills-list{
+        // background-color: seagreen;
+        margin-top: 20px;
+
+        .skills-grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .skills-col{
+            background-color: $lightBg;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            color: $subTextColor;
+            font-family: $ibm;
+            
+            .skill-img{
+                margin: auto;
+                margin-right: 10px;
+            }
+        }
+    }
 }

@@ -1,4 +1,56 @@
 .about-wrap {
   background-color: #071B2F;
-  padding: 100px 0;
+  padding: 80px 120px;
+  color: #FFFFFF;
+}
+.about-wrap .about-grid {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr 2fr;
+}
+.about-wrap .about-info p {
+  color: #66B2FF;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+.about-wrap .about-info h1 {
+  color: #FFFFFF;
+  font-size: 45px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.about-wrap .about-info h1 span {
+  color: #66B2FF;
+}
+.about-wrap .about-info button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 14px;
+  background-color: #132F4C;
+  border: 1px solid #144271;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.about-wrap .about-desc {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.about-wrap .about-desc .about-intro p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.about-wrap .about-desc .about-personal-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 10px 0;
+}
+.about-wrap .about-desc .info-col p:nth-child(odd) {
+  font-weight: 800;
+}
+.about-wrap .about-desc p {
+  font-size: 18px;
+}
+.about-wrap .about-desc .icon {
+  color: #66B2FF;
 }/*# sourceMappingURL=about.css.map */
